@@ -78,9 +78,9 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
-  margin-bottom: 16px;
+  inline-size: 711px;
+  block-size: 386px;
+  margin-block-end: 16px;
 }
 
 .result__video {
@@ -101,7 +101,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 5px;
+  margin-block-end: 5px;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -125,10 +125,10 @@ ol {
 
 .search-form__textfield {
   width: 100%;
-  border-top: 1px solid currentColor;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid currentColor;
-  border-left: 1px solid transparent;
+  border-block-start: 1px solid currentColor;
+  border-inline-end: 1px solid transparent;
+  border-block-end: 1px solid currentColor;
+  border-inline-start: 1px solid transparent;
   outline: none;
   color: inherit;
   font-family: inherit;
@@ -162,16 +162,16 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 19px;
-  height: 19px;
-  margin-right: 5px;
+  inline-size: 19px;
+  block-size: 19px;
+  margin-inline-end: 5px;
   border: 1px solid;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   background-color: currentColor;
 }
 
@@ -216,7 +216,7 @@ ol {
 }
 
 .title {
-  margin-bottom: 22px;
+  margin-block-end: 22px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -242,7 +242,7 @@ ol {
 }
 
 .content__list-item {
-  width: 390px;
+  inline-size: 390px;
 }
 
 .content__card-link {
@@ -255,6 +255,7 @@ ol {
   text-underline-offset: 2px;
 }
 
+.content__card-link:active .content__video-card,
 .content__card-link_current .content__video-card {
   background-color: #545050;
 }
@@ -300,13 +301,13 @@ ol {
 
 .content__video-card-thumbnail {
   flex-shrink: 0;
-  width: 194px;
-  height: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
-  width: 390px;
-  margin-top: 30px;
+  inline-size: 390px;
+  margin-block-start: 30px;
 }
